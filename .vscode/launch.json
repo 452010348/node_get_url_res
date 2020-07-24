@@ -1,0 +1,34 @@
+{
+	// 使用 IntelliSense 了解相关属性。
+	// 悬停以查看现有属性的描述。
+	// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+	// "version": "0.2.0",
+	// "configurations": [
+	// ],
+	"configurations": [
+		//只能允许调试node.js
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "app爬取html下载",
+			"program": "${workspaceFolder}/app.js",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "res下载json资源",
+			"program": "${workspaceFolder}/res.js",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "thm转exml",
+			"program": "${workspaceFolder}/app_thm.js",
+			"skipFiles": [
+				"<node_internals>/**"
+			]
+		}
+	]
+}
